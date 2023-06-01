@@ -1,0 +1,27 @@
+<div>
+  <Controller
+    name='code'
+    control={control}
+    render={({ field: { onChange } }) => (
+      <>
+        <Label>
+          <span className='block mb-2'>Código de verificação</span>
+          <AuthCode
+            containerClassName='flex justify-center'
+            inputClassName={cn(
+              'mx-2.5 w-12 h-12 text-center rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 ring-gray-300 placeholder:text-gray-400 focus:ring-indigo-600',
+              {
+                'ring-gray-300 placeholder:text-gray-400 focus:ring-indigo-600': !Boolean(errors.code),
+                'ring-2 ring-rose-400': Boolean(errors.code),
+              }
+            )}
+            onChange={onChange}
+            placeholder='•'
+            allowedCharacters='numeric'
+          />
+        </Label>
+        {errors.code && <span className='inline-flex text-sm text-rose-600'>{errors.code?.message}</span>}
+      </>
+    )}
+  />
+</div>

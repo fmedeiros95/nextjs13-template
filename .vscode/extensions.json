@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments",
+        "dsznajder.es7-react-js-snippets",
+        "pkief.material-icon-theme",
+        "dotenv.dotenv-vscode",
+        "editorconfig.editorconfig",
+        "mintlify.document",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "mrmlnc.vscode-scss",
+        "bradlc.vscode-tailwindcss",
+        "planbcoding.vscode-react-refactor",
+        "moalamri.inline-fold"
+    ]
+}
